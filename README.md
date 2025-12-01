@@ -11,3 +11,18 @@ O objetivo é fornecer exemplos reais, aplicáveis a SOCs, Blue Teams e profissi
 ✔ Mapear comportamento malicioso usando MITRE ATT&CK
 ✔ Utilizar Python, Pandas e análise exploratória para encontrar anomalias
 ✔ Servir como portfólio profissional para posições de Cybersecurity / SOC
+
+threat-hunting-notebooks/
+│
+├── datasets/
+│   ├── auth_logs.csv
+│   ├── dns_logs.csv
+│   └── process_logs.csv
+│
+├── DNS_Tunneling_Detection.ipynb
+├── Beaconing_Detection.ipynb
+├── Rare_Processes.ipynb
+├── Suspicious_Logins.ipynb
+│
+└── requirements.txt
+
