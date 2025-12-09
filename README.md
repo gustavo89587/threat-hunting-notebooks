@@ -1,108 +1,108 @@
-🛡️ Threat Hunting Notebooks
-Análises, detecções e investigações em cenários reais de SOC | MITRE ATT&CK | Python + Pandas
+Th️ Threat Hunting Notebooks
+Analysis, detection and investigation in real SoC scenarios / MITRE ATT&CK / Python + Pandas
 
-Este repositório reúne notebooks de Threat Hunting desenvolvidos para investigação, detecção e entendimento de comportamentos suspeitos em ambientes corporativos.
-O objetivo é fornecer exemplos reais, aplicáveis a SOCs, Blue Teams e profissionais que desejam evoluir em detecção baseada em comportamento, usando Python e dados estruturados.
+This repository brings together Threat Hunting notebooks developed for investigating, detecting, and understanding suspicious behavior in enterprise environments.
+The objective is to provide real examples, applicable to SOCs, Blue Teams and professionals who want to evolve in behavior-based detection, using Python and structured data.
 
-🚀 Objetivos
+🚀 Goals
 
-✔ Demonstrar como um analista SOC investiga ameaças de forma prática
-✔ Aplicar técnicas de Threat Hunting em datasets reais
-✔ Mapear comportamento malicioso usando MITRE ATT&CK
-✔ Utilizar Python, Pandas e análise exploratória para encontrar anomalias
-✔ Servir como portfólio profissional para posições de Cybersecurity / SOC
+✔ Demonstrate how a SOC analyst investigates threats in a practical way
+✔ Apply Threat Hunting techniques on real datasets
+✔ Map malicious behavior using MITRE ATT&CK
+✔ Use Python, Pandas and exploratory analysis to find anomalies
+✔ Serve as professional portfolio for cybersecurity / SOC positions
 
 threat-hunting-notebooks/
 │
 ├── datasets/
-│   ├── auth_logs.csv
-│   ├── dns_logs.csv
-│   └── process_logs.csv
+│ ├ ─ ─ auth_logs.csv
+│ ├ ─ ─ dns_logs.csv
+│ └ ─ ─ process_logs.csv
 │
 ├── DNS_Tunneling_Detection.ipynb
 ├── Beaconing_Detection.ipynb
 ├── Rare_Processes.ipynb
-├── Suspicious_Logins.ipynb
+Susp── Suspicious_Logins.ipynb
 │
 └── requirements.txt
 
-Conteúdo dos Notebooks
+Contents of Notebooks
 1. DNS Tunneling Detection
 
-Detecta possíveis canais encobertos utilizando DNS.
+Detects possible covert channels using DNS.
 
-🛠 Técnicas aplicadas:
+🛠 Applied techniques:
 
-Entropia de domínios
+Entropy of domains
 
-Volume incomum de requisições
+Unusual volume of requests
 
-Domínios raros
+Rare domains
 
-Tunneling comportamental
+Behavioral Tunneling
 
-🧩 MITRE ATT&CK:
+MIT MITRE ATT&CK:
 
-T1071.004 – Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol
+T1071.004-Exfiltration Over Unencrypted / Obfuscated Non-C2 Protocol
 
 2. Beaconing Detection
 
-Identificação de comunicação periódica típica de C2 (Command and Control).
+Identification of periodic communication typical of C2 (Command and Control).
 
-🛠 Técnicas aplicadas:
+🛠 Applied techniques:
 
-Autocorrelação
+Autocorrelation
 
-Análise de periodicidade
+Periodicity analysis
 
-Sinais de beacon
+Beacon signals
 
-Agrupamento por timestamps
+Grouping by timestamps
 
-🧩 MITRE ATT&CK:
+MIT MITRE ATT&CK:
 
-T1071 – Application Layer Protocol
+T1071-Application Layer Protocol
 
-T1008 – Fallback Channels
+T1008-Fallback Channels
 
 3. Rare Processes Hunting
 
-Busca por processos raros ou com baixa frequência — comportamento típico de:
+Search for rare or low-frequency processes - typical behavior of:
 
-• malware
-• execução lateral
-• persistência inicial
+* malware
+* lateral execution
+* initial persistence
 
-🛠 Técnicas aplicadas:
+🛠 Applied techniques:
 
-Baseline comportamental
+Behavioral Baseline
 
 Frequency analysis
 
-Detecção de processos atípicos
+Detection of atypical processes
 
-🧩 MITRE ATT&CK:
+MIT MITRE ATT&CK:
 
-T1059 – Execution
+T1059-Execution
 
-T1106 – Native API
+T1106-Native API
 
 4. Suspicious Logins
 
-Detecta padrões suspeitos em logs de autenticação:
+Detects suspicious patterns in authentication logs:
 
-• Impossible Travel
-• Login por credencial vazada
-• Tentativas repetitivas
-• Anomalias de IP e geolocalização
+* Impossible Travel
+* Login by leaked credential
+* Repetitive attempts
+* IP and geolocation anomalies
 
-🧩 MITRE ATT&CK:
+MIT MITRE ATT&CK:
 
-T1110 – Brute Force
+T1110-Brute Force
 
-T1078 – Valid Accounts
+T1078-Valid Accounts
 
-🧠 Tecnologias Utilizadas
+🧠 Technologies Used
 
 Python
 
@@ -110,39 +110,38 @@ Pandas
 
 Jupyter Notebook
 
-Plotly / Matplotlib (quando aplicável)
+Plotly / Matplotlib (where applicable)
 
-CSV datasets (logs reais simulados)
+CSV datasets (simulated real logs)
 
-▶️ Como Executar
-pip install -r requirements.txt
+▶️ How To Run
+pip install-r requirements.txt
 jupyter notebook
 
 
-Abra qualquer notebook e carregue os datasets da pasta /datasets.
+Open any notebook and load the datasets from the /datasets folder.
 
-📌 Próximos Passos (Roadmap)
+📌 Next Steps (Roadmap)
 
-Adicionar detecção de PowerShell malicioso
+Add malicious PowerShell detection
 
-Analisar logs de HTTP/Proxy
+Parse HTTP/Proxy logs
 
-Criar painel de correlação
+Create correlation dashboard
 
-Enriquecimento via MITRE ATT&CK automático
+Enrichment via MITRE ATT & CK automatic
 
-Dashboard final para SOC Tier 1/Tier 2
+Final dashboard for SOC Tier 1 / Tier 2
 
-🤝 Contribuições
+🤝 Contributions
 
-Pull requests, sugestões e issues são bem-vindos.
-Este repositório é um espaço para aprendizado e compartilhamento técnico.
+Pull requests, suggestions and issues are welcome.
+This repository is a space for technical learning and sharing.
 
-🎯 Sobre Mim
+🎯 About Me
 
-Gustavo Okamoto — Cybersecurity Analyst
-Foco em: SOC | Threat Detection | Python Automation | Cloud Security (GCP/AWS)
+Gustavo Okamoto-Cybersecurity Analyst
+Focus on: SOC / Threat Detection / Python Automation / Cloud Security (GCP / AWS)
 
 LinkedIn: linkedin.com/in/gustavo-okamoto-de-carvalho-ti
 GitHub: github.com/gustavo89587
-
